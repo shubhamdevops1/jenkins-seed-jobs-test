@@ -1,4 +1,4 @@
-def hostName = "https://shubham1714@bitbucket.org/shubham1714"
+def hostName = "https://github.com/shubhamdevops1"
 //def CREDENTIALS_ID = "BitbucketSSH"
 def repoName = "code-test"
 def branchName = "master" 
@@ -7,7 +7,6 @@ String folderroot = 'BUILD-JOBS'
 folder(folderroot){
 
 }
-
 // multibranchPipelineJob(folderroot + '/' + 'code'){
 //     branchSources{
 //         git {
