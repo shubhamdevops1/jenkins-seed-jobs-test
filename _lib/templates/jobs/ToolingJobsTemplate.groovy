@@ -8,7 +8,7 @@ class ToolingJobsTemplate{
     def static BRANCH_NAME = "master"
     def static JENKINS_FILR = "Jenkinsfile"    
 
-    static def createJobWithBranchExtension(job, repoName, projectName, branchName = "master", fileName = "Jenkinsfile", jobRotation = 3){
+    static def createJobWithBranchExtension(job, repoName, projectName, branchName = "main", fileName = "Jenkinsfile", jobRotation = 3){
         job.with{
             logRotator{
                 numToKeep(jobRotation)
