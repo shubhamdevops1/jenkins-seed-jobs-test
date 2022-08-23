@@ -1,7 +1,7 @@
-def hostName = "https://github.com/shubhamdevops1"
+def hostName = "git@github.com:shubhamdevops1"
 //def CREDENTIALS_ID = "BitbucketSSH"
 def repoName = "code-test"
-def branchName = "master" 
+def branchName = "main" 
 
 String folderroot = 'BUILD-JOBS'
 folder(folderroot){
@@ -24,10 +24,10 @@ folder(folderroot){
 //     }
 // }
 
-pipelineJob(folderroot + '/' + 'build-job'){
+pipelineJob(folderroot + '/' + 'build'){
     logRotator {
-        numToKeep(5)
-        artifactNumToKeep(1)
+        numToKeep(2)
+        artifactNumToKeep(2)
     }
     
     definition{
