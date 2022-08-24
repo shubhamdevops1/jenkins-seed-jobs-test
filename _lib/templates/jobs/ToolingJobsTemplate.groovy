@@ -1,7 +1,7 @@
 package templates.jobs
 
 class ToolingJobsTemplate{
-    def static hostName = "git clone git@bitbucket.org:shubham1714"
+    def static hostName = "git clone git@github.com:shubhamdevops1"
     // as we use the public github hence we do not need to mentioned keys.
     //def static CREDENTIALS_ID = ""
 
