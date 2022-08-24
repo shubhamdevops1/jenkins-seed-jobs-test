@@ -9,9 +9,7 @@ folder(folderName){
 }
 
 jobs.createJobWithBranchExtension(pipelineJob(folderName + "/deploy_feature_image"), "ipt-charts-code", "HELMDEPL", "main", fileName = "Jenkinsfile.deploy").parameters{
-    choiceParam('REPO
-    
-    NAME', ['ipt-charts-code'], 'Helm chart repo name')
+    choiceParam('REPONAME', ['ipt-charts-code'], 'Helm chart repo name')
     textParam{
         name('FEATUREIMAGE')
         defaultValue("")
